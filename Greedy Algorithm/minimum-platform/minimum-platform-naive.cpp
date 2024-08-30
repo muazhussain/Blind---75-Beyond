@@ -17,15 +17,18 @@ class Solution{
     int findPlatform(int arr[], int dep[], int n)
     {
     	int res = 0;
+        int idx = 0;
     	for(int i = 0; i < n - 1; i++) {
     		int curr_max = 1;
     		for(int j = i + 1; j < n; j++) {
-    			if ((arr[i] <= dep[j] && arr[i] >= arr[j]) || (arr[j] <= dep[i] && arr[j] >= arr[i])) {
-                	curr_max++;
-            	}	
+    			if((arr[i] >= arr[j] && dep[i] <= dep[j]) || (arr[i] <= arr[j] && dep[i] >= dep[j]) || (arr[i] >= arr[j] && dep[i] >= ))
     		}
+            if(curr_max > res) {
+                idx = i;
+            }
     		res = max(res, curr_max);
     	}
+        cout << idx << endl;
     	return res;
     }
 };
@@ -54,3 +57,5 @@ int main()
    return 0;
 }
 // } Driver Code Ends
+
+// 203.76.96.5
