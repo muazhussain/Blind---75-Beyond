@@ -1,4 +1,4 @@
-// Problem link: https://leetcode.com/problems/majority-element-ii/
+// Problem link: https://leetcode.com/problems/majority-element/
 // Time: O(n)
 // Space: O(1)
 
