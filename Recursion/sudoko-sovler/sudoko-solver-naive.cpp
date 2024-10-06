@@ -1,6 +1,6 @@
 // Problem link: https://leetcode.com/problems/sudoku-solver/
-// Time: 
-// Space:
+// Time: O(9(n ^ 2))
+// Space: O(1)
 
 class Solution {
 private:
